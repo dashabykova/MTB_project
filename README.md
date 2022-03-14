@@ -2,5 +2,5 @@
 Here will be scripts for the research project
 
 - Phylogeny: ancestor states reconstruction and reconstruction results parsing
-- Downstream: functional analysis of genes found in phenotype-association tests
+- Downstream: functional analysis of genes found in phenotype-association tests (to be added)
 - Annotation: variant calling results annotation
