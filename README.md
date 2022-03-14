@@ -1,4 +1,6 @@
-Here will be scripts for the research project on revealing epistatic interactions in Mycobacterium tuberculosis genes
+## Epistatic interactions in Mycobacterium tuberculosis genes 
+Here will be scripts for the research project
 
-Phylogeny: ancestor states reconstruction and reconstruction results parsing
-Downstream: functional analysis of genes found in phenotype-association tests
+- Phylogeny: ancestor states reconstruction and reconstruction results parsing
+- Downstream: functional analysis of genes found in phenotype-association tests
+- Annotation: variant calling results annotation
