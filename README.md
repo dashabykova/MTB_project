@@ -11,4 +11,6 @@ castor
 ape
 
 ### Python libraries used:
-ete3
+ete3 
+biopython 
+pandas
