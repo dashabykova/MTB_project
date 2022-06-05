@@ -1,1 +1,5 @@
 Preliminary data processing script. Examples will be added.
+The script takes 4 arguments as input: (1) file with nucleotide variants to annotate, (2) folder to write an output file, (3) threshold of mutated gene ORF length: gene is considered to be "broken" if the length of its ORF is below the threshold (0.5 is recommended), (4) folder for temporary files to put into.
+
+Example of use:
+python3 Annotation.py Node11648.variants test/ 0.5 blastx_tempfiles/
