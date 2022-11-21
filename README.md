@@ -21,7 +21,7 @@ The script takes 3 arguments as input: (1) a file with nucleotide variants to an
 
 **Example of use:**
 ```
-python3 Annotation.py SAMN03648483.variants test/ 0.5
+python3 Annotation.py SAMN03649057.variants test/ 0.5
 ```
 
 * Here SAMN03648483.variants is a file with all nucleotide replacements (including insertions and deletions) in an isolate SAMN03648483 genome relative to H37Rv reference genome (all ".variants" files used in the analysis can be found in https://github.com/Reshetnikoff/m.tuberculosis-research-code/tree/main/db/nucl_data.tar.gz),
