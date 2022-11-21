@@ -169,9 +169,9 @@ def analyze_mutations(value, alt_pos, alignment, frame, pos_mutation, mutation_d
 
 if __name__ == "__main__":
     #reference sequence
-    nuc_ref = SeqIO.read('/export/home/kchukreev/data/h37rv.fasta', 'fasta')
+    nuc_ref = SeqIO.read('data/h37rv.fasta', 'fasta')
     #MTB coding genes annotation
-    cds = pd.read_csv('/export/home/kchukreev/data/h37rv_new_proteins.tsv', sep='\t')
+    cds = pd.read_csv('data/h37rv_new_proteins.tsv', sep='\t')
     #file with variant calling result for an isolate (the list of variants)
     input_f = sys.argv[1]
     #output folder
@@ -179,7 +179,8 @@ if __name__ == "__main__":
     #threshold for identity
     threshold = float(sys.argv[3])
     #folder for blastx temporary files
-    blast_folder = '/export/home/kchukreev/blastx_tempfiles/'
+    blast_folder = 'blastx_tempfiles/'
+    os.makedirs(blast_folder, exist_ok=True)
     organism = input_f.split('/')[-1][:-9]
     outname = outfolder + organism + '_result.tsv'
     nonref = pd.read_csv(input_f, sep='\t', header=None, names=['pos', 'ref', 'alt'])
